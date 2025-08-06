@@ -171,16 +171,7 @@ export default function Index() {
             Высококачественная древесина различных пород с профессиональной обработкой. 
             Быстрая доставка и индивидуальный подход к каждому заказу.
           </p>
-          <div className="flex gap-4 justify-center">
-            <Button size="lg" className="bg-wood-brown hover:bg-orange-600 text-white px-8 py-4 text-lg">
-              <Icon name="Search" size={20} className="mr-2" />
-              Смотреть каталог
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-wood-dark px-8 py-4 text-lg">
-              <Icon name="Calculator" size={20} className="mr-2" />
-              Рассчитать стоимость
-            </Button>
-          </div>
+
         </div>
       </section>
 
