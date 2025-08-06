@@ -441,13 +441,12 @@ export default function Index() {
           <div className="animate-slide-up">
             <div className="bg-gradient-to-br from-white/10 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-6 border border-wood-brown/30">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-2xl font-bold flex items-center gap-3">
-                  <Icon name="Map" size={24} className="text-wood-brown" />
+                <h3 className="text-2xl font-bold">
                   Как нас найти
                 </h3>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
-                  <div className="w-3 h-3 rounded-full animate-pulse bg-lime-500"></div>
-                  <span>Мы здесь</span>
+                  <Icon name="Clock" size={16} />
+                  <span>Работаем ежедневно 8:00-20:00</span>
                 </div>
               </div>
               <div className="bg-white rounded-xl overflow-hidden shadow-2xl h-96 relative">
@@ -469,10 +468,10 @@ export default function Index() {
               </div>
               <div className="flex items-center justify-between mt-4 text-sm text-gray-300">
                 <span>г. Выборг, ул. Промышленная, 15</span>
-                <span className="flex items-center gap-2">
-                  <Icon name="Clock" size={16} />
-                  Работаем ежедневно 8:00-20:00
-                </span>
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full animate-pulse bg-lime-500"></div>
+                  <span>Мы здесь</span>
+                </div>
               </div>
             </div>
           </div>
