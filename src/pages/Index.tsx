@@ -135,9 +135,7 @@ export default function Index() {
                 <h3 className="text-2xl font-bold text-wood-dark mb-4">Позвоните нам</h3>
                 <div className="space-y-3">
                   <a href="tel:+74951234567" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">+7 (123) 456-78-90</a>
-                  <a href="tel:+74959876543" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
-                    +7 (495) 987-65-43
-                  </a>
+                  <a href="tel:+74959876543" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">+7 (098) 765-43-21</a>
                 </div>
                 <p className="text-gray-600 mt-4">
                   Работаем ежедневно с 8:00 до 20:00
