@@ -364,7 +364,7 @@ export default function Index() {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-16 px-4 bg-gradient-to-br from-wood-green via-green-800 to-wood-dark text-white relative overflow-hidden">
+      <section id="contacts" className="py-16 px-4 text-white relative overflow-hidden" style={{backgroundColor: 'rgb(45, 74, 34)'}}>
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-10 w-32 h-32 border border-wood-brown rotate-12"></div>
