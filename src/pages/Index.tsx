@@ -165,8 +165,9 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-wood-dark to-wood-green text-white py-20 px-4">
-        <div className="container mx-auto text-center animate-fade-in">
+      <section className="relative text-white py-20 px-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/886831d7-cb16-4d71-b4ef-5faaacbd037f.jpg)'}}>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto text-center animate-fade-in relative z-10">
           <h1 className="text-5xl font-bold mb-6">
             Готовые материалы из дерева
           </h1>
