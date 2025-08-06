@@ -536,6 +536,7 @@ export default function Index() {
                 </div>
               </DialogContent>
             </Dialog>
+            </div>
           </div>
         </div>
       </section>
