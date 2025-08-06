@@ -418,7 +418,8 @@ export default function Index() {
             <div className="bg-gradient-to-br from-orange-500/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:border-white/60 transition-all duration-300 group animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-wood-brown rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
-                <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-orange-500 to-wood-brown rounded-full w-fit">
+                <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-wood-green to-wood-brown rounded-full w-fit
+">
                   <Icon name="MapPin" size={28} className="text-white" />
                 </div>
               </div>
