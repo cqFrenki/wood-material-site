@@ -118,7 +118,7 @@ export default function Index() {
             <DialogTrigger asChild>
               <div className="relative">
                 <div className="absolute inset-0 animate-pulse-attention rounded-md"></div>
-                <Button className="relative bg-wood-brown hover:bg-wood-green animate-bounce-gentle shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button className="relative bg-wood-brown hover:bg-wood-green shadow-lg hover:shadow-xl transition-all duration-300">
                   <Icon name="Phone" size={18} className="mr-2" />
                   Связаться
                 </Button>
@@ -427,7 +427,7 @@ export default function Index() {
               <DialogTrigger asChild>
                 <div className="relative">
                   <div className="absolute inset-0 animate-glow rounded-lg"></div>
-                  <Button size="lg" className="relative bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg animate-bounce-gentle shadow-xl hover:shadow-2xl transition-all duration-300">
+                  <Button size="lg" className="relative bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
                     Получить консультацию
                   </Button>
