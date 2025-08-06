@@ -240,6 +240,7 @@ body {
 
 /* Catalog Section */
 .catalog {
+  background: var(--wood-beige);
   padding: 4rem 0;
 }
 
@@ -511,6 +512,7 @@ body {
 
 /* About Section */
 .about {
+  background: var(--wood-beige);
   padding: 4rem 0;
 }
 
