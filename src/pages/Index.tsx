@@ -394,12 +394,8 @@ export default function Index() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">Телефон</h3>
               <div className="space-y-2 text-center">
-                <a href="tel:+78137210567" className="block text-lg hover:text-wood-brown transition-colors font-medium">
-                  +7 (813) 721-05-67
-                </a>
-                <a href="tel:+78137219543" className="block text-lg hover:text-wood-brown transition-colors font-medium">
-                  +7 (813) 721-95-43
-                </a>
+                <a href="tel:+78137210567" className="block text-lg hover:text-wood-brown transition-colors font-medium">+7 (123) 456-78-90</a>
+                <a href="tel:+78137219543" className="block text-lg hover:text-wood-brown transition-colors font-medium">+7 (098) 765-43-21</a>
               </div>
               <p className="text-gray-400 text-center mt-4">
                 Ежедневно 8:00 - 20:00
@@ -415,12 +411,8 @@ export default function Index() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">Email</h3>
               <div className="space-y-2 text-center">
-                <a href="mailto:info@vyborgwood.ru" className="block text-lg hover:text-wood-green transition-colors font-medium">
-                  info@vyborgwood.ru
-                </a>
-                <a href="mailto:orders@vyborgwood.ru" className="block text-lg hover:text-wood-green transition-colors font-medium">
-                  orders@vyborgwood.ru
-                </a>
+                <a href="mailto:info@vyborgwood.ru" className="block text-lg hover:text-wood-green transition-colors font-medium">info@internet.ru</a>
+                <a href="mailto:orders@vyborgwood.ru" className="block text-lg hover:text-wood-green transition-colors font-medium">what@internet.ru</a>
               </div>
               <p className="text-gray-400 text-center mt-4">
                 Отвечаем в течение часа
@@ -437,7 +429,7 @@ export default function Index() {
               <h3 className="text-2xl font-bold mb-4 text-center">Адрес</h3>
               <div className="text-center">
                 <p className="text-lg font-medium mb-1">г. Выборг</p>
-                <p className="text-lg font-medium">ул. Промышленная, 15</p>
+                <p className="text-lg font-medium">Хельсинское ш., д. 3</p>
               </div>
               <p className="text-gray-400 text-center mt-4">
                 Ленинградская область
