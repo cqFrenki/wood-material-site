@@ -134,9 +134,7 @@ export default function Index() {
                 </div>
                 <h3 className="text-2xl font-bold text-wood-dark mb-4">Позвоните нам</h3>
                 <div className="space-y-3">
-                  <a href="tel:+74951234567" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
-                    +7 (495) 123-45-67
-                  </a>
+                  <a href="tel:+74951234567" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">+7 (123) 456-78-90</a>
                   <a href="tel:+74959876543" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
                     +7 (495) 987-65-43
                   </a>
@@ -441,7 +439,7 @@ export default function Index() {
           <div className="animate-slide-up">
             <div className="bg-gradient-to-br from-white/10 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-6 border border-wood-brown/30">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-2xl font-bold">
+                <h3 className="font-bold py-0 my-0 text-3xl mx-[1px]">
                   Как нас найти
                 </h3>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
