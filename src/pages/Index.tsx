@@ -425,8 +425,9 @@ export default function Index() {
           <div className="text-center mt-12 animate-slide-up">
             <Dialog>
               <DialogTrigger asChild>
-                <div className="relative inline-block">
-                  <Button size="lg" className="relative bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300 animate-glow rounded-lg">
+                <div className="relative">
+                  <div className="absolute inset-0 animate-glow rounded-lg"></div>
+                  <Button size="lg" className="relative bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300">
                     <Icon name="MessageCircle" size={20} className="mr-2" />
                     Получить консультацию
                   </Button>
