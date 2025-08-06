@@ -364,62 +364,129 @@ export default function Index() {
       </section>
 
       {/* Contacts Section */}
-      <section id="contacts" className="py-16 px-4 bg-wood-dark text-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-4xl font-bold mb-4">Контакты</h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Свяжитесь с нами для консультации и размещения заказа
+      <section id="contacts" className="py-16 px-4 bg-gradient-to-br from-wood-dark via-gray-900 to-black text-white relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-32 h-32 border border-wood-brown rotate-12"></div>
+          <div className="absolute top-20 right-20 w-24 h-24 border border-wood-brown rotate-45"></div>
+          <div className="absolute bottom-20 left-1/4 w-16 h-16 border border-wood-brown rotate-12"></div>
+          <div className="absolute bottom-32 right-1/3 w-20 h-20 border border-wood-brown -rotate-12"></div>
+        </div>
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-16 animate-slide-up">
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="h-px w-12 bg-wood-brown"></div>
+              <Icon name="TreePine" size={32} className="text-wood-brown" />
+              <div className="h-px w-12 bg-wood-brown"></div>
+            </div>
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-wood-brown bg-clip-text text-transparent">
+              Свяжитесь с нами
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Мы работаем с каждым клиентом индивидуально, чтобы найти идеальное решение для ваших проектов
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Contact Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="text-center animate-slide-up">
-                <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
-                  <Icon name="Phone" size={32} />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            {/* Contact Cards */}
+            <div className="bg-gradient-to-br from-wood-brown/20 to-wood-green/10 backdrop-blur-sm rounded-2xl p-8 border border-wood-brown/30 hover:border-wood-brown/60 transition-all duration-300 group animate-slide-up">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-wood-brown to-wood-green rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
+                <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-wood-brown to-wood-green rounded-full w-fit">
+                  <Icon name="Phone" size={28} className="text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Телефон</h3>
-                <p className="text-gray-300">+7 (495) 123-45-67</p>
-                <p className="text-gray-300">+7 (495) 987-65-43</p>
               </div>
-              
-              <div className="text-center animate-slide-up">
-                <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
-                  <Icon name="Mail" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-gray-300">info@drevomaterialy.ru</p>
-                <p className="text-gray-300">sales@drevomaterialy.ru</p>
+              <h3 className="text-2xl font-bold mb-4 text-center">Телефон</h3>
+              <div className="space-y-2 text-center">
+                <a href="tel:+78137210567" className="block text-lg hover:text-wood-brown transition-colors font-medium">
+                  +7 (813) 721-05-67
+                </a>
+                <a href="tel:+78137219543" className="block text-lg hover:text-wood-brown transition-colors font-medium">
+                  +7 (813) 721-95-43
+                </a>
               </div>
-              
-              <div className="text-center animate-slide-up md:col-span-2">
-                <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
-                  <Icon name="MapPin" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Адрес</h3>
-                <p className="text-gray-300">г. Выборг,</p>
-                <p className="text-gray-300">ул. Промышленная, 15</p>
-              </div>
+              <p className="text-gray-400 text-center mt-4">
+                Ежедневно 8:00 - 20:00
+              </p>
             </div>
+            
+            <div className="bg-gradient-to-br from-wood-green/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-wood-green/30 hover:border-wood-green/60 transition-all duration-300 group animate-slide-up">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-wood-green to-wood-brown rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
+                <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-wood-green to-wood-brown rounded-full w-fit">
+                  <Icon name="Mail" size={28} className="text-white" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-center">Email</h3>
+              <div className="space-y-2 text-center">
+                <a href="mailto:info@vyborgwood.ru" className="block text-lg hover:text-wood-green transition-colors font-medium">
+                  info@vyborgwood.ru
+                </a>
+                <a href="mailto:orders@vyborgwood.ru" className="block text-lg hover:text-wood-green transition-colors font-medium">
+                  orders@vyborgwood.ru
+                </a>
+              </div>
+              <p className="text-gray-400 text-center mt-4">
+                Отвечаем в течение часа
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-orange-500/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-300 group animate-slide-up">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-wood-brown rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
+                <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-orange-500 to-wood-brown rounded-full w-fit">
+                  <Icon name="MapPin" size={28} className="text-white" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-center">Адрес</h3>
+              <div className="text-center">
+                <p className="text-lg font-medium mb-1">г. Выборг</p>
+                <p className="text-lg font-medium">ул. Промышленная, 15</p>
+              </div>
+              <p className="text-gray-400 text-center mt-4">
+                Ленинградская область
+              </p>
+            </div>
+          </div>
 
-            {/* Yandex Map */}
-            <div className="animate-slide-up">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg h-80">
+          {/* Enhanced Yandex Map */}
+          <div className="animate-slide-up">
+            <div className="bg-gradient-to-br from-white/10 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-6 border border-wood-brown/30">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-2xl font-bold flex items-center gap-3">
+                  <Icon name="Map" size={24} className="text-wood-brown" />
+                  Наше производство
+                </h3>
+                <div className="flex items-center gap-2 text-sm text-gray-400">
+                  <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                  <span>Мы здесь</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-xl overflow-hidden shadow-2xl h-96 relative">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b2bfaafb3d23b47a0e6c3b4a9c7d8e9f0123456&amp;source=constructor"
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac80c0e9e7d2f4a2b9c5e8f1d6a3b7c0e4&amp;source=constructor&ll=28.741632%2C60.712778&z=16&pt=28.741632%2C60.712778%2Cpm2rdl"
                   width="100%"
                   height="100%"
                   frameBorder="0"
                   style={{ border: 0 }}
                   allowFullScreen
-                  title="Карта с адресом компании в Выборге"
+                  title="Производство древесных материалов в Выборге"
                 ></iframe>
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-sm font-medium text-gray-800">Выборг Древпром</span>
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-300 text-sm text-center mt-2">
-                г. Выборг, ул. Промышленная, 15
-              </p>
+              <div className="flex items-center justify-between mt-4 text-sm text-gray-300">
+                <span>г. Выборг, ул. Промышленная, 15</span>
+                <span className="flex items-center gap-2">
+                  <Icon name="Clock" size={16} />
+                  Работаем ежедневно 8:00-20:00
+                </span>
+              </div>
             </div>
           </div>
           
