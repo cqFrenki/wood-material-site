@@ -467,10 +467,10 @@ export default function Index() {
                 </div>
               </div>
               <div className="flex items-center justify-between mt-4 text-sm text-gray-300">
-                <span>г. Выборг, ул. Промышленная, 15</span>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full animate-pulse bg-lime-500"></div>
                   <span>Мы здесь</span>
+                  <span>г. Выборг, ул. Промышленная, 15</span>
                 </div>
               </div>
             </div>
