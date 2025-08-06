@@ -843,7 +843,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #374151;
+  background: rgb(51, 48, 48);
   color: #d1d5db;
   padding: 1rem;
   text-align: center;
