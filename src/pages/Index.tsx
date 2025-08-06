@@ -467,7 +467,7 @@ export default function Index() {
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full animate-pulse bg-lime-500"></div>
                   <span>Мы здесь</span>
-                  <span>г. Выборг, ул. Промышленная, 15</span>
+                  <span>г. Выборг, Хельсинское ш., д. 3</span>
                 </div>
               </div>
             </div>
