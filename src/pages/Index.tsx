@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Input } from '@/components/ui/input';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import Icon from '@/components/ui/icon';
 
 const woodMaterials = [
@@ -113,10 +114,50 @@ export default function Index() {
             <a href="#about" className="hover:text-wood-beige transition-colors">О компании</a>
             <a href="#contacts" className="hover:text-wood-beige transition-colors">Контакты</a>
           </div>
-          <Button className="bg-wood-brown hover:bg-wood-green">
-            <Icon name="Phone" size={18} className="mr-2" />
-            Связаться
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button className="bg-wood-brown hover:bg-wood-green">
+                <Icon name="Phone" size={18} className="mr-2" />
+                Связаться
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle className="text-center text-wood-dark">Связаться с нами</DialogTitle>
+              </DialogHeader>
+              <div className="text-center py-6">
+                <div className="mx-auto mb-6 p-4 bg-wood-brown text-white rounded-full w-fit">
+                  <Icon name="Phone" size={48} />
+                </div>
+                <h3 className="text-2xl font-bold text-wood-dark mb-4">Позвоните нам</h3>
+                <div className="space-y-3">
+                  <a href="tel:+74951234567" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
+                    +7 (495) 123-45-67
+                  </a>
+                  <a href="tel:+74959876543" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
+                    +7 (495) 987-65-43
+                  </a>
+                </div>
+                <p className="text-gray-600 mt-4">
+                  Работаем ежедневно с 8:00 до 20:00
+                </p>
+                <div className="flex gap-2 mt-6 justify-center">
+                  <Button asChild className="bg-wood-brown hover:bg-wood-green">
+                    <a href="tel:+74951234567">
+                      <Icon name="Phone" size={16} className="mr-2" />
+                      Позвонить
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a href="mailto:info@drevomaterialy.ru">
+                      <Icon name="Mail" size={16} className="mr-2" />
+                      Написать
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </nav>
 
@@ -358,10 +399,50 @@ export default function Index() {
           </div>
           
           <div className="text-center mt-12 animate-slide-up">
-            <Button size="lg" className="bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg">
-              <Icon name="MessageCircle" size={20} className="mr-2" />
-              Получить консультацию
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg" className="bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg">
+                  <Icon name="MessageCircle" size={20} className="mr-2" />
+                  Получить консультацию
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle className="text-center text-wood-dark">Получить консультацию</DialogTitle>
+                </DialogHeader>
+                <div className="text-center py-6">
+                  <div className="mx-auto mb-6 p-4 bg-wood-brown text-white rounded-full w-fit">
+                    <Icon name="Phone" size={48} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-wood-dark mb-4">Позвоните нам</h3>
+                  <div className="space-y-3">
+                    <a href="tel:+74951234567" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
+                      +7 (495) 123-45-67
+                    </a>
+                    <a href="tel:+74959876543" className="block text-xl font-semibold text-wood-brown hover:text-wood-green transition-colors">
+                      +7 (495) 987-65-43
+                    </a>
+                  </div>
+                  <p className="text-gray-600 mt-4">
+                    Работаем ежедневно с 8:00 до 20:00
+                  </p>
+                  <div className="flex gap-2 mt-6 justify-center">
+                    <Button asChild className="bg-wood-brown hover:bg-wood-green">
+                      <a href="tel:+74951234567">
+                        <Icon name="Phone" size={16} className="mr-2" />
+                        Позвонить
+                      </a>
+                    </Button>
+                    <Button variant="outline" asChild>
+                      <a href="mailto:info@drevomaterialy.ru">
+                        <Icon name="Mail" size={16} className="mr-2" />
+                        Написать
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </section>
