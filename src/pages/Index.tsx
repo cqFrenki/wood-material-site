@@ -385,7 +385,7 @@ export default function Index() {
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             {/* Contact Cards */}
-            <div className="bg-gradient-to-br from-wood-brown/20 to-wood-green/10 backdrop-blur-sm rounded-2xl p-8 border border-wood-brown/30 hover:border-wood-brown/60 transition-all duration-300 group animate-slide-up">
+            <div className="bg-gradient-to-br from-wood-brown/20 to-wood-green/10 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:border-white/60 transition-all duration-300 group animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-2 bg-gradient-to-r from-wood-brown to-wood-green rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
                 <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-wood-brown to-wood-green rounded-full w-fit">
@@ -402,7 +402,7 @@ export default function Index() {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br from-wood-green/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-wood-green/30 hover:border-wood-green/60 transition-all duration-300 group animate-slide-up">
+            <div className="bg-gradient-to-br from-wood-green/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:border-white/60 transition-all duration-300 group animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-2 bg-gradient-to-r from-wood-green to-wood-brown rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
                 <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-wood-green to-wood-brown rounded-full w-fit">
@@ -419,7 +419,7 @@ export default function Index() {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br from-orange-500/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-orange-500/30 hover:border-orange-500/60 transition-all duration-300 group animate-slide-up">
+            <div className="bg-gradient-to-br from-orange-500/20 to-wood-brown/10 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:border-white/60 transition-all duration-300 group animate-slide-up">
               <div className="relative">
                 <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-wood-brown rounded-full opacity-20 group-hover:opacity-40 transition-opacity blur-xl"></div>
                 <div className="relative mx-auto mb-6 p-4 bg-gradient-to-br from-orange-500 to-wood-brown rounded-full w-fit">
