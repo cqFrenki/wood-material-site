@@ -369,32 +369,53 @@ export default function Index() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center animate-slide-up">
-              <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
-                <Icon name="Phone" size={32} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Contact Info */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="text-center animate-slide-up">
+                <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
+                  <Icon name="Phone" size={32} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Телефон</h3>
+                <p className="text-gray-300">+7 (495) 123-45-67</p>
+                <p className="text-gray-300">+7 (495) 987-65-43</p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Телефон</h3>
-              <p className="text-gray-300">+7 (495) 123-45-67</p>
-              <p className="text-gray-300">+7 (495) 987-65-43</p>
+              
+              <div className="text-center animate-slide-up">
+                <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
+                  <Icon name="Mail" size={32} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Email</h3>
+                <p className="text-gray-300">info@drevomaterialy.ru</p>
+                <p className="text-gray-300">sales@drevomaterialy.ru</p>
+              </div>
+              
+              <div className="text-center animate-slide-up md:col-span-2">
+                <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
+                  <Icon name="MapPin" size={32} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Адрес</h3>
+                <p className="text-gray-300">г. Выборг,</p>
+                <p className="text-gray-300">ул. Промышленная, 15</p>
+              </div>
             </div>
-            
-            <div className="text-center animate-slide-up">
-              <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
-                <Icon name="Mail" size={32} />
+
+            {/* Yandex Map */}
+            <div className="animate-slide-up">
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg h-80">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b2bfaafb3d23b47a0e6c3b4a9c7d8e9f0123456&amp;source=constructor"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  title="Карта с адресом компании в Выборге"
+                ></iframe>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-gray-300">info@drevomaterialy.ru</p>
-              <p className="text-gray-300">sales@drevomaterialy.ru</p>
-            </div>
-            
-            <div className="text-center animate-slide-up">
-              <div className="mx-auto mb-4 p-4 bg-wood-brown rounded-full w-fit">
-                <Icon name="MapPin" size={32} />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Адрес</h3>
-              <p className="text-gray-300">г. Москва,</p>
-              <p className="text-gray-300">ул. Промышленная, 15</p>
+              <p className="text-gray-300 text-sm text-center mt-2">
+                г. Выборг, ул. Промышленная, 15
+              </p>
             </div>
           </div>
           
