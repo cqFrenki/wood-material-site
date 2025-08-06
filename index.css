@@ -843,9 +843,9 @@ body {
 
 /* Footer */
 .footer {
-  background: #111827;
+  background: #374151;
   color: #d1d5db;
-  padding: 2rem 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -859,7 +859,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-logo svg {
