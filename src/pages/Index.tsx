@@ -375,12 +375,7 @@ export default function Index() {
         
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16 animate-slide-up">
-            <div className="inline-flex items-center gap-3 mb-6">
-              <div className="h-px w-12 bg-wood-brown"></div>
-              <Icon name="TreePine" size={32} className="text-wood-brown" />
-              <div className="h-px w-12 bg-wood-brown"></div>
-            </div>
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-wood-brown bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold mb-6 text-white">
               Свяжитесь с нами
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -456,7 +451,7 @@ export default function Index() {
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-2xl font-bold flex items-center gap-3">
                   <Icon name="Map" size={24} className="text-wood-brown" />
-                  Наше производство
+                  Как нас найти
                 </h3>
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <div className="w-3 h-3 rounded-full animate-pulse bg-lime-500"></div>
@@ -490,17 +485,20 @@ export default function Index() {
             </div>
           </div>
           
-          <div className="text-center mt-12 animate-slide-up">
-            <Dialog>
-              <DialogTrigger asChild>
-                <div className="relative inline-block">
-                  <div className="absolute inset-0 animate-pulse-attention rounded-lg"></div>
-                  <Button size="lg" className="relative bg-wood-brown hover:bg-wood-green px-8 py-4 text-lg shadow-xl hover:shadow-2xl transition-all duration-300">
-                    <Icon name="MessageCircle" size={20} className="mr-2" />
+          {/* Consultation CTA */}
+          <div className="text-center mt-16 animate-slide-up">
+            <div className="bg-gradient-to-r from-wood-brown/20 via-wood-green/20 to-wood-brown/20 rounded-3xl p-8 mb-8 border border-wood-brown/30">
+              <div className="mb-6">
+                <h3 className="text-3xl font-bold mb-3 text-white">Нужна помощь в выборе?</h3>
+                <p className="text-gray-300 text-lg">Наши специалисты подберут оптимальные материалы для вашего проекта</p>
+              </div>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button size="lg" className="bg-gradient-to-r from-wood-brown to-wood-green hover:from-wood-green hover:to-wood-brown px-10 py-4 text-xl font-semibold shadow-2xl transform hover:scale-105 transition-all duration-300 border border-wood-brown/50">
+                    <Icon name="MessageCircle" size={24} className="mr-3" />
                     Получить консультацию
                   </Button>
-                </div>
-              </DialogTrigger>
+                </DialogTrigger>
               <DialogContent className="sm:max-w-md">
                 <DialogHeader>
                   <DialogTitle className="text-center text-wood-dark">Получить консультацию</DialogTitle>
