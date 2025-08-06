@@ -106,7 +106,7 @@ export default function Index() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold flex items-center gap-2">
             <Icon name="TreePine" size={32} />
-            ДревоМатериалы
+            ЛОВЕККА
           </div>
           <div className="hidden md:flex gap-8">
             <a href="#catalog" className="hover:text-wood-beige transition-colors">Каталог</a>
@@ -152,7 +152,7 @@ export default function Index() {
                     </a>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="mailto:info@drevomaterialy.ru">
+                    <a href="mailto:info@lovekka.ru">
                       <Icon name="Mail" size={16} className="mr-2" />
                       Написать
                     </a>
@@ -527,7 +527,7 @@ export default function Index() {
                       </a>
                     </Button>
                     <Button variant="outline" asChild>
-                      <a href="mailto:info@drevomaterialy.ru">
+                      <a href="mailto:info@lovekka.ru">
                         <Icon name="Mail" size={16} className="mr-2" />
                         Написать
                       </a>
@@ -546,9 +546,9 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="TreePine" size={24} />
-            <span className="text-xl font-bold text-white">ДревоМатериалы</span>
+            <span className="text-xl font-bold text-white">ЛОВЕККА</span>
           </div>
-          <p>&copy; 2024 ДревоМатериалы. Все права защищены.</p>
+          <p>&copy; 2024 ЛОВЕККА. Все права защищены.</p>
         </div>
       </footer>
     </div>
