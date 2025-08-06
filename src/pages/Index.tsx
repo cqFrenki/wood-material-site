@@ -448,7 +448,7 @@ export default function Index() {
               </div>
               <div className="bg-white rounded-xl overflow-hidden shadow-2xl h-96 relative">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac80c0e9e7d2f4a2b9c5e8f1d6a3b7c0e4&amp;source=constructor&ll=28.741632%2C60.712778&z=16&pt=28.741632%2C60.712778%2Cpm2rdl"
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aac80c0e9e7d2f4a2b9c5e8f1d6a3b7c0e4&amp;source=constructor&ll=28.758500%2C60.709500&z=16&pt=28.758500%2C60.709500%2Cpm2rdl"
                   width="100%"
                   height="100%"
                   frameBorder="0"
@@ -459,7 +459,7 @@ export default function Index() {
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    <span className="text-sm font-medium text-gray-800">Выборг Древпром</span>
+                    <span className="text-sm font-medium text-gray-800">ЛОВЕККА</span>
                   </div>
                 </div>
               </div>
