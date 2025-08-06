@@ -479,7 +479,7 @@ export default function Index() {
           
           {/* Consultation CTA */}
           <div className="text-center mt-16 animate-slide-up">
-            <div className="bg-gradient-to-r from-wood-brown/20 via-wood-green/20 to-wood-brown/20 rounded-3xl p-8 mb-8 border border-wood-brown/30">
+            <div className="bg-gradient-to-r from-wood-brown/20 via-wood-green/20 to-wood-brown/20 rounded-3xl p-8 mb-8 border border-white/30">
               <div className="mb-6">
                 <h3 className="text-3xl font-bold mb-3 text-white">Нужна помощь в выборе?</h3>
                 <p className="text-gray-300 text-lg">Наши специалисты подберут оптимальные материалы для вашего проекта</p>
