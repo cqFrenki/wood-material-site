@@ -27,10 +27,10 @@
                 ЛОВЕККА
             </div>
             <div class="nav-links">
-                <a href="#catalog">Каталог</a>
-                <a href="#services">Услуги</a>
-                <a href="#about">О компании</a>
-                <a href="#contacts">Контакты</a>
+                <a href="#catalog" onclick="smoothScrollTo('catalog'); return false;">Каталог</a>
+                <a href="#services" onclick="smoothScrollTo('services'); return false;">Услуги</a>
+                <a href="#about" onclick="smoothScrollTo('about'); return false;">О компании</a>
+                <a href="#contacts" onclick="smoothScrollTo('contacts'); return false;">Контакты</a>
             </div>
             <button class="contact-btn" onclick="openContactModal()">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -42,34 +42,108 @@
     </nav>
 
     <!-- Hero Section -->
+    <!-- Hero Slideshow Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-container">
-            <h1 class="hero-title">Готовые материалы из дерева</h1>
-            <p class="hero-description">
-                Высококачественная древесина различных пород с профессиональной обработкой. 
-                Быстрая доставка и индивидуальный подход к каждому заказу.
-            </p>
-            <div class="hero-buttons">
-                <button class="hero-btn primary" onclick="document.getElementById('catalog').scrollIntoView()">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <path d="M21 21l-4.35-4.35"/>
-                    </svg>
-                    Смотреть каталог
-                </button>
-                <button class="hero-btn outline" onclick="openConsultationModal()">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                        <path d="M9 9h6v6H9z"/>
-                        <path d="M9 1v4"/>
-                        <path d="M15 1v4"/>
-                        <path d="M9 15v4"/>
-                        <path d="M15 15v4"/>
-                    </svg>
-                    Рассчитать стоимость
-                </button>
+        <div class="hero-slideshow-container">
+            <div class="slide active">
+                <img src="https://cdn.poehali.dev/files/608737c4-0b47-49c9-85b6-91d68fd25377.jpg" alt="Величественный дуб в природном ландшафте">
+                <div class="hero-slide-content">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Готовые материалы из дерева</h1>
+                        <p class="hero-subtitle">Дуб - Король леса</p>
+                        <p class="hero-description">
+                            Прочная и долговечная древесина для премиальных проектов. 
+                            Высокое качество с профессиональной обработкой.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="hero-btn primary" onclick="smoothScrollTo('catalog')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21l-4.35-4.35"/>
+                                </svg>
+                                Смотреть каталог
+                            </button>
+                            <button class="hero-btn outline" onclick="openConsultationModal()">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M9 9h6v6H9z"/>
+                                </svg>
+                                Рассчитать стоимость
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            <div class="slide">
+                <img src="https://cdn.poehali.dev/files/6e7c7b94-d846-4b70-ad6a-7cd7363b7530.jpg" alt="Одинокое дерево под голубым небом">
+                <div class="hero-slide-content">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Качество природы</h1>
+                        <p class="hero-subtitle">Экологически чистые материалы</p>
+                        <p class="hero-description">
+                            Отборная древесина из экологически чистых регионов. 
+                            Быстрая доставка и индивидуальный подход к каждому заказу.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="hero-btn primary" onclick="smoothScrollTo('catalog')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21l-4.35-4.35"/>
+                                </svg>
+                                Смотреть каталог
+                            </button>
+                            <button class="hero-btn outline" onclick="openConsultationModal()">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M9 9h6v6H9z"/>
+                                </svg>
+                                Рассчитать стоимость
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="https://cdn.poehali.dev/files/e7100065-1b7a-430e-91c8-688b72a1f592.jpg" alt="Раскидистое дерево на зеленом поле">
+                <div class="hero-slide-content">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Устойчивое производство</h1>
+                        <p class="hero-subtitle">Забота об экологии</p>
+                        <p class="hero-description">
+                            Материалы от проверенных поставщиков с заботой об экологии. 
+                            Профессиональная обработка и контроль качества.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="hero-btn primary" onclick="smoothScrollTo('catalog')">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="M21 21l-4.35-4.35"/>
+                                </svg>
+                                Смотреть каталог
+                            </button>
+                            <button class="hero-btn outline" onclick="openConsultationModal()">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                </svg>
+                                Рассчитать стоимость
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <button class="hero-slide-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="hero-slide-btn next" onclick="changeSlide(1)">❯</button>
+        </div>
+        
+        <!-- Slide indicators -->
+        <div class="hero-slide-indicators">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 
@@ -83,45 +157,7 @@
                 </p>
             </div>
 
-            <!-- Wood Gallery Slideshow -->
-            <div class="wood-gallery">
-                <div class="slideshow-container">
-                    <div class="slide active">
-                        <img src="https://cdn.poehali.dev/files/608737c4-0b47-49c9-85b6-91d68fd25377.jpg" alt="Величественный дуб в природном ландшафте">
-                        <div class="slide-content">
-                            <h3>Дуб - Король леса</h3>
-                            <p>Прочная и долговечная древесина для премиальных проектов</p>
-                        </div>
-                    </div>
-                    
-                    <div class="slide">
-                        <img src="https://cdn.poehali.dev/files/6e7c7b94-d846-4b70-ad6a-7cd7363b7530.jpg" alt="Одинокое дерево под голубым небом">
-                        <div class="slide-content">
-                            <h3>Качество природы</h3>
-                            <p>Отборная древесина из экологически чистых регионов</p>
-                        </div>
-                    </div>
-                    
-                    <div class="slide">
-                        <img src="https://cdn.poehali.dev/files/e7100065-1b7a-430e-91c8-688b72a1f592.jpg" alt="Раскидистое дерево на зеленом поле">
-                        <div class="slide-content">
-                            <h3>Устойчивое производство</h3>
-                            <p>Материалы от проверенных поставщиков с заботой об экологии</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Navigation buttons -->
-                    <button class="slide-btn prev" onclick="changeSlide(-1)">❮</button>
-                    <button class="slide-btn next" onclick="changeSlide(1)">❯</button>
-                </div>
-                
-                <!-- Slide indicators -->
-                <div class="slide-indicators">
-                    <span class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
+
 
             <!-- Filters -->
             <div class="filters">
@@ -635,6 +671,17 @@
         setInterval(() => {
             changeSlide(1);
         }, 5000);
+
+        // Smooth scroll function
+        function smoothScrollTo(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
