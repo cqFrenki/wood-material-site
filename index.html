@@ -157,7 +157,45 @@
                 </p>
             </div>
 
-
+            <!-- Catalog Gallery Slideshow -->
+            <div class="catalog-gallery">
+                <div class="catalog-slideshow-container">
+                    <div class="catalog-slide active">
+                        <img src="https://cdn.poehali.dev/files/608737c4-0b47-49c9-85b6-91d68fd25377.jpg" alt="Величественный дуб в природном ландшафте">
+                        <div class="catalog-slide-content">
+                            <h3>Премиальная древесина дуба</h3>
+                            <p>Прочные и долговечные материалы для элитных проектов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog-slide">
+                        <img src="https://cdn.poehali.dev/files/6e7c7b94-d846-4b70-ad6a-7cd7363b7530.jpg" alt="Одинокое дерево под голубым небом">
+                        <div class="catalog-slide-content">
+                            <h3>Экологически чистые материалы</h3>
+                            <p>Отборная древесина из проверенных источников</p>
+                        </div>
+                    </div>
+                    
+                    <div class="catalog-slide">
+                        <img src="https://cdn.poehali.dev/files/e7100065-1b7a-430e-91c8-688b72a1f592.jpg" alt="Раскидистое дерево на зеленом поле">
+                        <div class="catalog-slide-content">
+                            <h3>Устойчивое лесопользование</h3>
+                            <p>Ответственный подход к заготовке материалов</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <button class="catalog-slide-btn prev" onclick="changeCatalogSlide(-1)">❮</button>
+                    <button class="catalog-slide-btn next" onclick="changeCatalogSlide(1)">❯</button>
+                </div>
+                
+                <!-- Slide indicators -->
+                <div class="catalog-slide-indicators">
+                    <span class="catalog-dot active" onclick="currentCatalogSlide(1)"></span>
+                    <span class="catalog-dot" onclick="currentCatalogSlide(2)"></span>
+                    <span class="catalog-dot" onclick="currentCatalogSlide(3)"></span>
+                </div>
+            </div>
 
             <!-- Filters -->
             <div class="filters">
@@ -682,6 +720,40 @@
                 });
             }
         }
+
+        // Catalog slideshow functionality
+        let currentCatalogSlideIndex = 0;
+
+        function changeCatalogSlide(direction) {
+            const slides = document.querySelectorAll('.catalog-slide');
+            const dots = document.querySelectorAll('.catalog-dot');
+            
+            slides[currentCatalogSlideIndex].classList.remove('active');
+            dots[currentCatalogSlideIndex].classList.remove('active');
+            
+            currentCatalogSlideIndex = (currentCatalogSlideIndex + direction + slides.length) % slides.length;
+            
+            slides[currentCatalogSlideIndex].classList.add('active');
+            dots[currentCatalogSlideIndex].classList.add('active');
+        }
+
+        function currentCatalogSlide(index) {
+            const slides = document.querySelectorAll('.catalog-slide');
+            const dots = document.querySelectorAll('.catalog-dot');
+            
+            slides[currentCatalogSlideIndex].classList.remove('active');
+            dots[currentCatalogSlideIndex].classList.remove('active');
+            
+            currentCatalogSlideIndex = index - 1;
+            
+            slides[currentCatalogSlideIndex].classList.add('active');
+            dots[currentCatalogSlideIndex].classList.add('active');
+        }
+
+        // Auto-slide catalog every 6 seconds
+        setInterval(() => {
+            changeCatalogSlide(1);
+        }, 6000);
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
