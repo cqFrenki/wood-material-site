@@ -83,6 +83,46 @@
                 </p>
             </div>
 
+            <!-- Wood Gallery Slideshow -->
+            <div class="wood-gallery">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="https://cdn.poehali.dev/files/608737c4-0b47-49c9-85b6-91d68fd25377.jpg" alt="Величественный дуб в природном ландшафте">
+                        <div class="slide-content">
+                            <h3>Дуб - Король леса</h3>
+                            <p>Прочная и долговечная древесина для премиальных проектов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://cdn.poehali.dev/files/6e7c7b94-d846-4b70-ad6a-7cd7363b7530.jpg" alt="Одинокое дерево под голубым небом">
+                        <div class="slide-content">
+                            <h3>Качество природы</h3>
+                            <p>Отборная древесина из экологически чистых регионов</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://cdn.poehali.dev/files/e7100065-1b7a-430e-91c8-688b72a1f592.jpg" alt="Раскидистое дерево на зеленом поле">
+                        <div class="slide-content">
+                            <h3>Устойчивое производство</h3>
+                            <p>Материалы от проверенных поставщиков с заботой об экологии</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <button class="slide-btn prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="slide-btn next" onclick="changeSlide(1)">❯</button>
+                </div>
+                
+                <!-- Slide indicators -->
+                <div class="slide-indicators">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
             <!-- Filters -->
             <div class="filters">
                 <div class="filter-group">
@@ -561,6 +601,40 @@
                 consultationModal.style.display = 'none';
             }
         }
+
+        // Slideshow functionality
+        let currentSlideIndex = 0;
+
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            slides[currentSlideIndex].classList.remove('active');
+            dots[currentSlideIndex].classList.remove('active');
+            
+            currentSlideIndex = (currentSlideIndex + direction + slides.length) % slides.length;
+            
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        function currentSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            slides[currentSlideIndex].classList.remove('active');
+            dots[currentSlideIndex].classList.remove('active');
+            
+            currentSlideIndex = index - 1;
+            
+            slides[currentSlideIndex].classList.add('active');
+            dots[currentSlideIndex].classList.add('active');
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
